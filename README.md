@@ -1,5 +1,5 @@
 # attack-password-code
-code to crack passwords for documents. 
+code to crack passwords for zip files. 
 
 <p align="left">
   <img src="https://media.threatpost.com/wp-content/uploads/sites/103/2019/02/20135309/Passwords.jpg" />
