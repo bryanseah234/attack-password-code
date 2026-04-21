@@ -1,4 +1,4 @@
-# attack-password-code
+# attackpassword
 code to crack passwords for zip files. 
 
 <p align="left">
