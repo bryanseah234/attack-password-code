@@ -16,11 +16,11 @@ with open('1.txt', 'r', encoding="utf8") as f: #INPUT THE NAME OF YOUR WORDLISTS
 with open('2.txt', 'r', encoding="utf8") as f: #INPUT THE NAME OF YOUR WORDLISTS 
     words2 = f.readlines()
     for j in words2:
-        wordlist.append(words2)
+        wordlist.append(j)
 with open('3.txt', 'r', encoding="utf8") as f: #INPUT THE NAME OF YOUR WORDLISTS
     words3 = f.readlines()
     for k in words3:
-        wordlist.append(words3)
+        wordlist.append(k)
 
 # print(wordlist)
 
