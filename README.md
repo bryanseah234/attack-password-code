@@ -1,38 +1,33 @@
 # attackpassword
+> ZIP file password cracker — brute force and dictionary attack modes for Python
 
-Code to crack passwords for zip files.
+## What it does
+Two standalone scripts that attempt to crack the password of a password-protected ZIP file. `bruteforce.py` generates all alphanumeric combinations up to length 4; `dictionaryattack.py` tests passwords from user-supplied wordlists plus keyword combinations.
 
-<p align="left">
-  <img src="https://media.threatpost.com/wp-content/uploads/sites/103/2019/02/20135309/Passwords.jpg" />
-</p>
+## Features
+- **Brute force**: tries all alphanumeric combinations (a–z, A–Z, 0–9) up to length 4
+- **Dictionary attack**: loads up to 3 custom wordlist `.txt` files plus user-defined keywords
+- Keyword combination mode — generates pairwise combos of provided keywords
+- Live progress counter for each attempt
 
-## ⚠️ LEGAL DISCLAIMER
+## Requirements
+```
+Python 3.x — no third-party packages (stdlib only)
+```
 
-**THIS TOOL IS FOR EDUCATIONAL PURPOSES ONLY**
+## Usage
 
-**Authorized Use Only:**
-- Recovering your own forgotten passwords
-- Penetration testing with explicit written authorization
-- Security research in controlled, isolated environments
+**Brute force:**
+1. Place your ZIP file in the same directory
+2. Edit `bruteforce.py`: set `filename` and the internal file name in `z.extract()`
+3. Run: `python bruteforce.py`
 
-**Illegal Activities:**
-Using this tool to access files or systems without authorization is **ILLEGAL** and may violate:
-- Computer Fraud and Abuse Act (CFAA) — USA
-- Computer Misuse Act — UK
-- Similar laws in virtually every country worldwide
+**Dictionary attack:**
+1. Edit `dictionaryattack.py`: set `filename`, add hints to `keywords = []`, provide wordlist `.txt` files
+2. Run: `python dictionaryattack.py`
 
-**Legal Consequences:** Criminal prosecution, imprisonment, and civil liability.
+## Security note
+For **authorized use only** — recovering your own forgotten ZIP password, CTF challenges, or security research. Do not use on files you do not own.
 
-**USE AT YOUR OWN RISK.** The author is not responsible for any misuse.
-
----
-
-## Instructions
-
-1. Download the repo as a zip file
-2. Unzip the file
-3. Paste in the name of the file you want to crack
-4. Save and close the Python file
-5. Double click to run the programme
-
-**REMINDER: Only use on files you own or have explicit written authorization to test.**
+## License
+MIT
