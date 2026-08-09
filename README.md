@@ -30,4 +30,5 @@ Python 3.x — no third-party packages (stdlib only)
 For **authorized use only** — recovering your own forgotten ZIP password, CTF challenges, or security research. Do not use on files you do not own.
 
 ## License
-MIT
+
+Apache-2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
